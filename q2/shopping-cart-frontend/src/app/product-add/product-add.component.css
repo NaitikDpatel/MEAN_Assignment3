@@ -1,0 +1,29 @@
+.product-add {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-details {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.form-control {
+  width: 100%;
+}

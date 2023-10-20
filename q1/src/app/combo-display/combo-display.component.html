@@ -1,0 +1,10 @@
+<h2>Combo-Box</h2>
+<div class="product-details">
+  <h2>Select</h2>
+  <select [(ngModel)]="selectedItem">
+    <option *ngFor="let item of dataArray" [value]="item">{{ item }}</option>
+  </select>
+
+  <p *ngIf="selectedItem">You Selected: {{ selectedItem }}</p>
+
+</div>

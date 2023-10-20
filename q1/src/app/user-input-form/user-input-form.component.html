@@ -1,0 +1,23 @@
+<h2>User Form</h2>
+
+<div class="product-details">
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+    </div><br>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+    </div><br>
+    <!-- Add more input fields for other details as needed -->
+    <button type="submit">Submit</button>
+  </form>
+
+  <div *ngIf="submitted">
+    <h3>Details</h3>
+    <p>Name: {{ user.name }}</p>
+    <p>Email: {{ user.email }}</p>
+    <!-- Display other details here -->
+  </div>
+</div>
